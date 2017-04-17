@@ -124,4 +124,6 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " Fix: Delay while switching betweeen insert mode and normal mode 
 set timeoutlen=1000 ttimeoutlen=0
+
+" Dont show support message at startup
 set shortmess=atI
