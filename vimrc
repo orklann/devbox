@@ -127,3 +127,7 @@ set timeoutlen=1000 ttimeoutlen=0
 
 " Dont show support message at startup
 set shortmess=atI
+
+" PageUp, PageDown shortcuts
+map <C-j> <C-f>
+map <C-k> <C-b>
