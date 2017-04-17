@@ -116,3 +116,11 @@ au filetype tmpl set omnifunc=htmlcomplete#CompleteTags
 " Change the current tab with ^j and ^k (normal mode only)
 nnoremap <silent> <C-j> :tabnext<CR>
 nnoremap <silent> <C-k> :tabprevious<CR>
+
+" Change cursor while switching between insert mode and normal mode for iTerm2
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+" Fix: Delay while switching betweeen insert mode and normal mode 
+set timeoutlen=1000 ttimeoutlen=0
