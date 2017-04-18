@@ -2,5 +2,5 @@
 
 ```
 cp -r vim ~/.vim
-cp .vimrc ~/.vimrc
+cp vimrc ~/.vimrc
 ```
