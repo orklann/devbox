@@ -131,3 +131,6 @@ set shortmess=atI
 " PageUp, PageDown shortcuts
 map <C-j> <C-f>
 map <C-k> <C-b>
+
+" Use spaces while press tab
+set expandtab
