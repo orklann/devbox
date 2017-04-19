@@ -134,3 +134,6 @@ map <C-k> <C-b>
 
 " Use spaces while press tab
 set expandtab
+
+" Show line numbers
+set nu
