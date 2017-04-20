@@ -137,3 +137,9 @@ set expandtab
 
 " Show line numbers
 set nu
+
+" In visual mode, use Y to copy to system clipboard
+vnoremap Y "*y
+
+" In normal mode, do the same with the current line
+nnoremap Y "*yy
