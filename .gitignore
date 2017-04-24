@@ -108,4 +108,5 @@ DerivedData
 
 Carthage/Build
 
-
+# Vim swap files
+*.swp
