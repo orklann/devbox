@@ -1,6 +1,7 @@
 # How to install
 
 ```
-cp -r vim ~/.vim
+mkdir ~/.vim
+cp -R vim/ ~/.vim
 cp vimrc ~/.vimrc
 ```
