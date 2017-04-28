@@ -18,7 +18,7 @@ set ruler
 set history=100
 set nowrap
 " Change terminal title
-set title
+"set title
 " No annoying error noises
 set noerrorbells
 " Make backspace delete lots of things
