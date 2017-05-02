@@ -143,3 +143,6 @@ vnoremap Y "*y
 
 " In normal mode, do the same with the current line
 nnoremap Y "*yy
+
+" Alias for :buffers
+cabbrev b buffers
