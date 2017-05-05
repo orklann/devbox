@@ -75,9 +75,10 @@ set mouse=ar
 map <C-N> :tabnext<CR>
 map <C-P> :tabprevious<CR>
 
-" Shell like Home / End
 inoremap <C-A> <Home>
 inoremap <C-E> <End>
+nnoremap <C-A> ^
+nnoremap <C-E> $
 
 " Hide coloration of found words
 map <C-C> :nohlsearch<CR>
