@@ -71,37 +71,9 @@ colorscheme sidonia
 set ttymouse=xterm2
 set mouse=ar
 
-if has("gui_running")
-    set guifont=Monospace\ 8
-	set guioptions-=T
-	set guioptions-=m
-	set guioptions-=l
-	set guioptions-=L
-	set guioptions-=r
-	set guioptions-=R
-	set mousemodel=extend
-	set mousefocus
-	set mousehide
-	set noguipty
-	set guicursor=a:blinkon0
-
-    "Stupid comment character"
-    "# Custom options"
-    set fuoptions=maxvert,maxhorz
-    set lines=24 columns=80
-    
-
-	highlight Normal     gui=NONE guibg=Black guifg=White
-	highlight NonText    gui=NONE guibg=Black
-	highlight Pmenu      gui=NONE guifg=Black guibg=LightGrey
-	highlight PmenuSel   gui=NONE guifg=LightGrey guibg=Black
-	highlight PmenuSbar  gui=NONE guifg=LightGrey guibg=Black
-	highlight PmenuThumb gui=NONE guifg=Black guibg=LightGrey 
-endif
-
 " Change buffer
-map <C-N> :bn<CR>
-map <C-P> :bp<CR>
+map <C-N> :tabnext<CR>
+map <C-P> :tabprevious<CR>
 
 " Shell like Home / End
 inoremap <C-A> <Home>
@@ -114,8 +86,8 @@ autocmd FileType Makefile noexpandtab
 au filetype tmpl set omnifunc=htmlcomplete#CompleteTags
 
 " Change the current tab with ^j and ^k (normal mode only)
-nnoremap <silent> <C-j> :tabnext<CR>
-nnoremap <silent> <C-k> :tabprevious<CR>
+nnoremap <silent> <C-j> <C-f>
+nnoremap <silent> <C-k> <C-b>
 
 " Change cursor while switching between insert mode and normal mode for iTerm2
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
