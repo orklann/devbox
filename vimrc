@@ -1,4 +1,4 @@
-au! BufRead,BufNewFile *.sass         setfiletype sass 
+au! BufRead,BufNewFile *.sass       setfiletype sass 
 au! BufRead,BufNewFile *.scss       setfiletype css
 " Use vim settings, instead of vi
 set nocompatible
