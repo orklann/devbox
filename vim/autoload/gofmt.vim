@@ -29,7 +29,8 @@ function! s:gofmt_cmd() abort
   endif
 
   if exists('$GOPATH')
-    let paths += map(split($GOPATH, pathsep), 'v:val . "/bin"')
+    "FIx: [gofmt.vim] can''t find command: ['']
+    "let paths += map(split($GOPATH, pathsep), 'v:val . "/bin"')
   endif
 
   if !empty(paths)
