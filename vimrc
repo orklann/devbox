@@ -116,3 +116,12 @@ nnoremap Y "*yy
 " :ls to show buffers
 "
 cabbrev t tabedit
+
+" Make !resize work in iTerm2
+" Preferences -> Profiles -> {your profile} -> Terminal, 
+" Uncheck this "Disable session-initiated window resizing" 
+" Large window
+cabbrev l silent exec "!resize -s 45 120"
+
+" Smaller window
+cabbrev s silent exec "!resize -s 45 80"
