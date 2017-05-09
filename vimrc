@@ -90,6 +90,9 @@ au filetype tmpl set omnifunc=htmlcomplete#CompleteTags
 nnoremap <silent> <C-j> <C-f>
 nnoremap <silent> <C-k> <C-b>
 
+" Easy way for ^
+nnoremap <silent> 9 ^
+
 " Change cursor while switching between insert mode and normal mode for iTerm2
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
