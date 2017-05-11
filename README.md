@@ -2,6 +2,6 @@
 
 ```
 mkdir ~/.vim
-cp -R vim/ ~/.vim
+cp -r vim/ ~/.vim/
 cp vimrc ~/.vimrc
 ```
