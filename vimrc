@@ -128,3 +128,7 @@ cabbrev l silent exec "!resize -s 45 120"
 
 " Smaller window
 cabbrev s silent exec "!resize -s 45 80"
+
+" Fix auto jump to closing brace in auto-pairs
+let g:AutoPairsMultilineClose = 0
+let g:AutoPairsFlyMode = 0
