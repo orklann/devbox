@@ -135,3 +135,6 @@ let g:AutoPairsFlyMode = 0
 
 " Iterm2 (Optoin-^) not work in Vim, so we bind to <Ctrl-^) instead
 let g:AutoPairsShortcutFastWrap="<C-e>"
+
+" yank also copy to system  pasteboad
+set clipboard=unnamed
