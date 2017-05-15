@@ -18,4 +18,4 @@ brew install zsh
 ```
 ## oh-my-zsh
 
-Follow steps (here)[https://github.com/robbyrussell/oh-my-zsh]
+Follow steps [here](https://github.com/robbyrussell/oh-my-zsh)
