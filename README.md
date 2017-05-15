@@ -14,7 +14,7 @@ cp vimrc ~/.vimrc
 
 **`vimrc`** was originally from [shykes](https://github.com/shykes/devbox),
 
-## fish shell
+## Fish shell
 
 [Fish Shell](https://fishshell.com/)
 
