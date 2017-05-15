@@ -107,8 +107,8 @@ set shortmess=atI
 " Use spaces while press tab
 set expandtab
 
-" Show line numbers
-set nu
+" Dont show line numbers
+set nonu
 
 " In visual mode, use Y to copy to system clipboard
 vnoremap Y "*y
