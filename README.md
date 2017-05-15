@@ -29,3 +29,5 @@ omf install foreign-env
 Follow steps [here](https://github.com/oh-my-fish/oh-my-fish)
 
 **`fish theme`**: run `omf theme default`
+
+## Screenshot
