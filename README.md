@@ -12,6 +12,8 @@ cp -r vim/ ~/.vim/
 cp vimrc ~/.vimrc
 ```
 
+**`vimrc`** was originally from [shykes](https://github.com/shykes/devbox),
+
 ## zsh
 ```
 brew install zsh zsh-completions
