@@ -14,7 +14,7 @@ See `iterm` folder
 
 ## zsh
 ```
-brew install zsh
+brew install zsh zsh-completions
 ```
 ## oh-my-zsh
 
