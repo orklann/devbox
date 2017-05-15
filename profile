@@ -6,11 +6,6 @@ export PATH=$HOME/bin:$PATH
 
 alias p7="export pn=7 && ssh -4 -C -D 8088 57e37d9d0c1e6636490001c5@52.23.162.8"
 
-
-export M2_HOME="/Users/aaron/Downloads/apache-maven-3.2.1/"
-export M2=$M2_HOME/bin
-export PATH=$M2:$PATH
-
 ### Sparkle 
 export PATH="/Users/aaron/projects/Sparkle/bin:$PATH"
 
@@ -26,8 +21,6 @@ alias cls="clear"
 alias 月半小夜曲="echo by 陳樂基－原唱：李克勤"
 
 export EDITOR="vim"
-
-export PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:"${PATH}"
 
 alias http_proxy="export http_proxy='http://127.0.0.1:1087'"
 alias https_proxy="export https_proxy='https://127.0.0.1:1087'"
