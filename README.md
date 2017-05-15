@@ -18,6 +18,12 @@ cp vimrc ~/.vimrc
 
 [Fish Shell](https://fishshell.com/)
 
+Fish syntax is not fully compatibale with bash, so we need `foreign-env` plugin to reuse ~/.profile
+
+```
+omf install foreign-env
+```
+
 ## oh-my-fish
 
 Follow steps [here](https://github.com/oh-my-fish/oh-my-fish)
