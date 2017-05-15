@@ -14,13 +14,12 @@ cp vimrc ~/.vimrc
 
 **`vimrc`** was originally from [shykes](https://github.com/shykes/devbox),
 
-## zsh
-```
-brew install zsh zsh-completions
-```
+## fish shell
 
-## oh-my-zsh
+[Fish Shell](https://fishshell.com/)
 
-Follow steps [here](https://github.com/robbyrussell/oh-my-zsh)
+## oh-my-fish
 
-**`zsh theme`**: see `oh-my-zsh/themes/takeshi.zsh-theme`
+Follow steps [here](https://github.com/oh-my-fish/oh-my-fish)
+
+**`fish theme`**: run `omf theme default`
