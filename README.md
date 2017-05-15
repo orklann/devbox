@@ -31,3 +31,5 @@ Follow steps [here](https://github.com/oh-my-fish/oh-my-fish)
 **`fish theme`**: run `omf theme default`
 
 ## Screenshot
+
+![Fish Default Theme](https://raw.githubusercontent.com/aaron-elkins/devbox/master/Fish%20default%20theme.png)
