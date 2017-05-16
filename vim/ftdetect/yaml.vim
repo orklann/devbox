@@ -1,1 +1,1 @@
-au BufRead,BufNewFile *.yml set filetype=yaml 
+au BufRead,BufNewFile *yaml,*.yml set filetype=yaml 
