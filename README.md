@@ -1,11 +1,11 @@
 ## How to setup
 
-###### iTerm2
+##### iTerm2
 ```
 See `iterm` folder
 ```
 
-###### Vim
+##### Vim
 ```SHELL
 cp -r vim/ ~/.vim
 cp vimrc ~/.vimrc
@@ -13,15 +13,15 @@ cp vimrc ~/.vimrc
 
 *`vimrc`* was originally from [shykes](https://github.com/shykes/devbox)
 
-###### Fish shell
+##### Fish shell
 
-###### *[Fish Shell](https://fishshell.com/)*
+###### *[Install Fish Shell](https://fishshell.com/)*
 
 ```SHELL
 cp -r config/ ~/.config
 ```
 
-###### oh-my-fish
+##### oh-my-fish
 
 ###### *Follow steps [here](https://github.com/oh-my-fish/oh-my-fish)*
 
