@@ -33,3 +33,4 @@ Follow steps [here](https://github.com/oh-my-fish/oh-my-fish)
 ## Screenshot
 
 ![Fish Default Theme](https://raw.githubusercontent.com/aaron-elkins/devbox/master/Fish%20default%20theme.png)
+![DNA](https://raw.githubusercontent.com/aaron-elkins/devbox/master/dna.png)
