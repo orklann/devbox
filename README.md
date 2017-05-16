@@ -7,8 +7,7 @@ See `iterm` folder
 
 ## Vim
 ```
-mkdir ~/.vim
-cp -r vim/ ~/.vim/
+cp -r vim/ ~/.vim
 cp vimrc ~/.vimrc
 ```
 
@@ -24,9 +23,22 @@ Fish syntax is not fully compatible with bash, so we need `foreign-env` plugin t
 omf install foreign-env
 ```
 
+Then 
+
+```
+cp -r config/ ~/.config
+```
+
+
 ## oh-my-fish
 
 Follow steps [here](https://github.com/oh-my-fish/oh-my-fish)
+
+Then
+
+```
+cp -r oh-my-fish/ ~/.oh-my-fish
+```
 
 **`fish theme`**: run `omf theme default`
 
