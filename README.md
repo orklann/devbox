@@ -17,12 +17,6 @@ cp vimrc ~/.vimrc
 
 [Fish Shell](https://fishshell.com/)
 
-Fish syntax is not fully compatible with bash, so we need `foreign-env` plugin to reuse ~/.profile
-
-```
-omf install foreign-env
-```
-
 Then 
 
 ```
@@ -38,6 +32,12 @@ Then
 
 ```
 cp -r oh-my-fish/ ~/.oh-my-fish
+```
+
+Fish syntax is not fully compatible with bash, so we need `foreign-env` plugin to reuse ~/.profile
+
+```
+omf install foreign-env
 ```
 
 **`fish theme`**: run `omf theme default`
