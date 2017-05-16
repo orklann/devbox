@@ -11,6 +11,6 @@ export PATH="/Users/aaron/projects/Sparkle/bin:$PATH"
 export PATH="/usr/local/Cellar/mtr/0.87/sbin:$PATH"
 
 export EDITOR="vim"
-
-export GOPATH="${HOME}/go"
+export GOPATH=~/go:$GOPATH
+export PATH=~/bin:~/go/bin:$PATH
 
