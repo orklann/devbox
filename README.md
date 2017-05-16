@@ -6,7 +6,7 @@ See `iterm` folder
 ```
 
 ### Vim
-```SHELL
+```console
 cp -r vim/ ~/.vim
 cp vimrc ~/.vimrc
 ```
@@ -17,7 +17,7 @@ cp vimrc ~/.vimrc
 
 ###### *[Install Fish Shell](https://fishshell.com/)*
 
-```SHELL
+```console
 cp -r config/ ~/.config
 ```
 
@@ -25,13 +25,13 @@ cp -r config/ ~/.config
 
 ###### *Follow steps [here](https://github.com/oh-my-fish/oh-my-fish)*
 
-```SHELL
+```console
 cp -r oh-my-fish/ ~/.oh-my-fish
 ```
 
 ###### *Fish syntax is not fully compatible with bash, so we need `foreign-env` plugin to reuse ~/.profile*
 
-```SHELL
+```console
 omf install foreign-env
 ```
 
