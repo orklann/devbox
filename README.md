@@ -1,19 +1,19 @@
-# How to setup
+## How to setup
 
-## iTerm2
+###### iTerm2
 ```
 See `iterm` folder
 ```
 
-## Vim
+###### Vim
 ```
 cp -r vim/ ~/.vim
 cp vimrc ~/.vimrc
 ```
 
-**`vimrc`** was originally from [shykes](https://github.com/shykes/devbox)
+*`vimrc`* was originally from [shykes](https://github.com/shykes/devbox)
 
-## Fish shell
+###### Fish shell
 
 [Fish Shell](https://fishshell.com/)
 
@@ -23,8 +23,7 @@ Then
 cp -r config/ ~/.config
 ```
 
-
-## oh-my-fish
+###### oh-my-fish
 
 Follow steps [here](https://github.com/oh-my-fish/oh-my-fish)
 
@@ -40,7 +39,7 @@ Fish syntax is not fully compatible with bash, so we need `foreign-env` plugin t
 omf install foreign-env
 ```
 
-**`fish theme`**: run `omf theme default`
+*`fish theme`*: run `omf theme default`
 
 ## Screenshot
 
