@@ -42,6 +42,11 @@ alias profile="vim ~/.profile"
 alias d="sudo ./TapestryD"
 alias n="sudo -u nobody ./TapestryNetworking"
 alias tapestry="cd $GOPATH/tapestry"
+alias dna="sh ~/projects/colorscripts/dna.sh"
 
-export LSCOLORS="exfxcxdxbxegedabagacad"
-#set -g __fish_git_prompt_char_dirtystate '+'
+# Larger font 
+alias lf="echo -e \"\033]50;SetProfile=Larger Takeshi\a\" 2> /dev/null"
+
+# Smaller font
+alias sf="echo -e \"\033]50;SetProfile=Takeshi\a\" 2> /dev/null"
+export LSCOLORS="exfxcxdxbxegedabagacad" 
