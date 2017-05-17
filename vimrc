@@ -129,6 +129,21 @@ cabbrev l silent exec "!resize -s 45 120"
 " Smaller window
 cabbrev s silent exec "!resize -s 45 80"
 
+fun! LargerFont()
+  silent exec '!echo -e "\033]50;SetProfile=Larger Takeshi\a"'
+  redraw!
+endfun
+
+fun! SmallerFont()
+  silent exec '!echo -e "\033]50;SetProfile=Takeshi\a"' | redraw!
+  redraw!
+endfun
+
+" Larger font 
+cabbrev lf call LargerFont()
+" Smaller font
+cabbrev sf call SmallerFont()
+
 " Fix auto jump to closing brace in auto-pairs
 let g:AutoPairsMultilineClose = 0
 let g:AutoPairsFlyMode = 0
