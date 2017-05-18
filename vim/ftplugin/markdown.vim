@@ -1,4 +1,3 @@
-
 " I am a tiltle
 " -|<TAB>
 " Ouput:
@@ -9,6 +8,8 @@ function! CompleteDashes()
   let dash_chars = repeat('-', len)
   call setline('.', dash_chars)
   call cursor('.', len+1)
+  " Tricky to insert a correct newline
+  put =''
 endfunction
 
 function! AutoComplete()
