@@ -1,6 +1,6 @@
 
 " I am a tiltle
-" |<TAB>
+" -|<TAB>
 " Ouput:
 " -------------
 function! CompleteDashes()
