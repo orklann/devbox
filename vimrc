@@ -116,6 +116,9 @@ vnoremap Y "*y
 " In normal mode, do the same with the current line
 nnoremap Y "*yy
 
+" vv = V
+nnoremap vv V
+
 " :ls to show buffers
 "
 cabbrev t tabedit
