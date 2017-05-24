@@ -39,5 +39,5 @@ omf install foreign-env
 
 ## Screenshot
 
-![Fish Default Theme](https://raw.githubusercontent.com/aaron-elkins/devbox/master/Fish%20default%20theme.png)
-![DNA](https://raw.githubusercontent.com/aaron-elkins/devbox/master/dna.png)
+![Fish Default Theme](https://raw.githubusercontent.com/orklann/devbox/master/Fish%20default%20theme.png)
+![DNA](https://raw.githubusercontent.com/orklann/devbox/master/dna.png)
