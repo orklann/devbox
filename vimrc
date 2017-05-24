@@ -1,4 +1,4 @@
-au! BufRead,BufNewFile *.sass       setfiletype sass 
+au BufRead,BufNewFile *.sass       setfiletype sass 
 au! BufRead,BufNewFile *.scss       setfiletype css
 " Use vim settings, instead of vi
 set nocompatible
@@ -75,10 +75,10 @@ set mouse=ar
 map <C-N> :tabnext<CR>
 map <C-P> :tabprevious<CR>
 
-inoremap <C-A> <Home>
-inoremap <C-E> <End>
-nnoremap <C-A> ^
-nnoremap <C-E> $
+"inoremap <C-A> <Home>
+"inoremap <C-E> <End>
+"nnoremap <C-A> ^
+"nnoremap <C-E> $
 
 " Hide coloration of found words
 map <C-C> :nohlsearch<CR>
@@ -151,12 +151,32 @@ cabbrev sf call SmallerFont()
 let g:AutoPairsMultilineClose = 0
 let g:AutoPairsFlyMode = 0
 
-" Iterm2 (Optoin-^) not work in Vim, so we bind to <Ctrl-^) instead
-let g:AutoPairsShortcutFastWrap="<C-e>"
-
 " yank also copy to system  pasteboad
 set clipboard=unnamed
 
 " encoding
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
+
+fun! MoveForward()
+  silent execute "normal! w"
+endfun
+
+fun! MoveBackward()
+ silent  execute "normal! b"
+endfun
+
+" NOTE: Interesting: <Esc>b, <Esc>f were mapped in iterm2
+"       Mapped here in vim to move forward/backward one word
+nnoremap <ESC>f w
+inoremap <ESC>f <ESC>w
+nnoremap <ESC>b b
+inoremap <ESC>b <ESC>b
+
+" NOTE: The same to above
+" Command-Right: Move to line end
+" Command-Left: Move to line beginning
+inoremap <C-A> <Home>
+inoremap <C-E> <End>
+nnoremap <C-A> ^
+nnoremap <C-E> $
