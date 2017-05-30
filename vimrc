@@ -161,3 +161,9 @@ set fileencoding=utf-8  " The encoding written to file.
 " set relative line numbers
 set relativenumber
 set number
+
+" Disable arrow keys for insert mode
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
