@@ -167,3 +167,6 @@ inoremap <Left> <Nop>
 inoremap <Right> <Nop>
 inoremap <Up> <Nop>
 inoremap <Down> <Nop>
+
+" Use goimports instead of gofmt 
+let g:gofmt_exe = 'goimports'
