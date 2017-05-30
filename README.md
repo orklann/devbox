@@ -11,6 +11,8 @@ cp -r vim/ ~/.vim
 cp vimrc ~/.vimrc
 ```
 
+###### Install goimports: `go get golang.org/x/tools/cmd/goimports` for gofmt.vim plugin
+
 *`vimrc`* was originally from [shykes](https://github.com/shykes/devbox)
 
 ### Fish shell
