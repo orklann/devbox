@@ -180,3 +180,7 @@ inoremap <C-A> <Home>
 inoremap <C-E> <End>
 nnoremap <C-A> ^
 nnoremap <C-E> $
+
+" set relative line numbers
+set relativenumber
+set number
