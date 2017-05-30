@@ -158,29 +158,6 @@ set clipboard=unnamed
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
-fun! MoveForward()
-  silent execute "normal! w"
-endfun
-
-fun! MoveBackward()
- silent  execute "normal! b"
-endfun
-
-" NOTE: Interesting: <Esc>b, <Esc>f were mapped in iterm2
-"       Mapped here in vim to move forward/backward one word
-nnoremap <ESC>f w
-inoremap <ESC>f <ESC>w
-nnoremap <ESC>b b
-inoremap <ESC>b <ESC>b
-
-" NOTE: The same to above
-" Command-Right: Move to line end
-" Command-Left: Move to line beginning
-inoremap <C-A> <Home>
-inoremap <C-E> <End>
-nnoremap <C-A> ^
-nnoremap <C-E> $
-
 " set relative line numbers
 set relativenumber
 set number
