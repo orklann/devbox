@@ -6,7 +6,7 @@ fu! ResetSpaces()
   %retab!
 endfunction
 
-augroup htmlfmt
-  autocmd! BufWritePre <buffer> call HtmlBeautify()
+augroup cssfmt
+  autocmd! BufWritePre <buffer> call CSSBeautify()
   autocmd! BufWritePost <buffer> call ResetSpaces()
 augroup END
