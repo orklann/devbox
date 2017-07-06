@@ -1,4 +1,4 @@
-" Call CSSBeautify() after saving css files
+" Call JsonBeautify() after saving json files
 set tabstop=4
 set expandtab
 
@@ -7,6 +7,6 @@ fu! ResetSpaces()
 endfunction
 
 augroup cssfmt
-  autocmd! BufWritePre <buffer> call CSSBeautify()
+  autocmd! BufWritePre <buffer> call JsonBeautify()
   autocmd! BufWritePost <buffer> call ResetSpaces()
 augroup END
