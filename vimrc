@@ -160,6 +160,7 @@ set fileencoding=utf-8  " The encoding written to file.
 
 " set relative line numbers
 set relativenumber
+set nu
 
 " Disable arrow keys for insert mode
 inoremap <Left> <Nop>
@@ -169,3 +170,8 @@ inoremap <Down> <Nop>
 
 " Use goimports instead of gofmt 
 let g:gofmt_exe = 'goimports'
+let g:gofmt_display_errors = 1
+
+" Trim whitespace on save
+" From: http://vim.wikia.com/wiki/Remove_unwanted_spaces
+autocmd BufWritePre * %s/\s\+$//e
