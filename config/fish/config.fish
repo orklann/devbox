@@ -52,4 +52,3 @@ alias lf="echo -e \"\033]50;SetProfile=Larger Takeshi\a\" 2> /dev/null"
 alias sf="echo -e \"\033]50;SetProfile=Takeshi\a\" 2> /dev/null"
 export LSCOLORS="exfxcxdxbxegedabagacad"
 set -g fish_user_paths "/usr/local/opt/curl/bin" $fish_user_paths
-set -g fish_user_paths "/usr/local/opt/curl/bin" $fish_user_paths
