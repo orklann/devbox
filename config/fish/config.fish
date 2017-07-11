@@ -24,6 +24,7 @@ alias gp="git push"
 alias p7="export pn=7; and ssh -4 -C -D 8088 57e37d9d0c1e6636490001c5@52.23.162.8"
 alias http_proxy="export http_proxy='http://127.0.0.1:1087'"
 alias https_proxy="export https_proxy='https://127.0.0.1:1087'"
+alias all_proxy="export ALL_PROXY=127.0.0.1:1087"
 alias ls="ls -G"
 alias xx="cd ~/XX-Net; and sh start; and cd -"
 alias todo="vim /Users/aaron/Desktop/Todo.md"
@@ -44,9 +45,11 @@ alias n="sudo -u nobody ./TapestryNetworking"
 alias tapestry="cd $GOPATH/tapestry"
 alias dna="sh ~/projects/colorscripts/dna.sh"
 
-# Larger font 
+# Larger font
 alias lf="echo -e \"\033]50;SetProfile=Larger Takeshi\a\" 2> /dev/null"
 
 # Smaller font
 alias sf="echo -e \"\033]50;SetProfile=Takeshi\a\" 2> /dev/null"
-export LSCOLORS="exfxcxdxbxegedabagacad" 
+export LSCOLORS="exfxcxdxbxegedabagacad"
+set -g fish_user_paths "/usr/local/opt/curl/bin" $fish_user_paths
+set -g fish_user_paths "/usr/local/opt/curl/bin" $fish_user_paths
