@@ -1,4 +1,4 @@
-au BufRead,BufNewFile *.sass       setfiletype sass 
+au BufRead,BufNewFile *.sass       setfiletype sass
 au! BufRead,BufNewFile *.scss       setfiletype css
 " Use vim settings, instead of vi
 set nocompatible
@@ -98,7 +98,7 @@ let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
-" Fix: Delay while switching betweeen insert mode and normal mode 
+" Fix: Delay while switching betweeen insert mode and normal mode
 set timeoutlen=1000 ttimeoutlen=0
 
 " Dont show support message at startup
@@ -124,8 +124,8 @@ nnoremap vv V
 cabbrev t tabedit
 
 " Make !resize work in iTerm2
-" Preferences -> Profiles -> {your profile} -> Terminal, 
-" Uncheck this "Disable session-initiated window resizing" 
+" Preferences -> Profiles -> {your profile} -> Terminal,
+" Uncheck this "Disable session-initiated window resizing"
 " Large window
 cabbrev l silent exec "!resize -s 45 120"
 
@@ -142,7 +142,7 @@ fun! SmallerFont()
   redraw!
 endfun
 
-" Larger font 
+" Larger font
 cabbrev lf call LargerFont()
 " Smaller font
 cabbrev sf call SmallerFont()
@@ -159,7 +159,6 @@ set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
 " set relative line numbers
-set relativenumber
 set nu
 
 " Disable arrow keys for insert mode
@@ -168,10 +167,34 @@ inoremap <Right> <Nop>
 inoremap <Up> <Nop>
 inoremap <Down> <Nop>
 
-" Use goimports instead of gofmt 
+" Use goimports instead of gofmt
 let g:gofmt_exe = 'goimports'
 let g:gofmt_display_errors = 1
 
 " Trim whitespace on save
 " From: http://vim.wikia.com/wiki/Remove_unwanted_spaces
 autocmd BufWritePre * %s/\s\+$//e
+
+" Show status line always
+set laststatus=2
+
+" Set status line colors
+hi statusline ctermbg=61 ctermfg=White
+
+" Color groups for status lines
+hi User1 ctermbg=61 ctermfg=Black
+hi User2 ctermbg=61 ctermfg=White
+
+
+fun! GetModifiedStatus()
+  let sign = &modified ? '*' : ''
+  let fullPath = pathshorten(expand('%:p:h'))
+  let filename = expand('%:t')
+  let s = 'set statusline=%2*'.sign.'\ \ \ \ \ \%1*'.fullPath.'/%2*'.filename.':%1*:%l'
+  exec s
+endfun
+
+call GetModifiedStatus()
+
+autocmd CursorMovedI * call GetModifiedStatus()
+autocmd BufWritePost * call GetModifiedStatus()
