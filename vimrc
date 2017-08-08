@@ -205,6 +205,7 @@ fun! GetStatus()
   let filename = fnameescape(expand('%:t'))
   let path = fullPath.'/'.filename.':'.lineNumber
   let spaces = GetPaddingSpaces(path)
+  " Show file encoding on status line
   "let s = 'set statusline=%2*'.sign.spaces.'%1*'.fullPath.'/%2*'.filename.'%1*:%l'."%=%2*%{''.(&fenc!=''?&fenc:&enc).''}"
   let s = 'set statusline=%2*'.sign.spaces.'%1*'.fullPath.'/%2*'.filename.'%1*:%l'
   exec s
