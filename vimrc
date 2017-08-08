@@ -222,4 +222,4 @@ autocmd VimEnter * call GetStatus()
 set cmdheight=1
 
 " New line
-nmap <CR> o<Esc>i<Tab>
+nmap <CR> o<Esc>i
