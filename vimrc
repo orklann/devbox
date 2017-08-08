@@ -218,6 +218,3 @@ autocmd VimEnter * call GetStatus()
 
 " Command light hight
 set cmdheight=1
-
-" Shortcut for cmdline-complete
-cmap <Tab> <Plug>CmdlineCompleteForward
