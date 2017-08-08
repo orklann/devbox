@@ -213,6 +213,7 @@ autocmd CursorMovedI * call GetStatus()
 autocmd BufWritePost * call GetStatus()
 autocmd BufRead,BufNewFile * call GetStatus()
 autocmd! BufRead,BufNewFile * call GetStatus()
+autocmd! BufEnter * call GetStatus()
 autocmd VimEnter * call GetStatus()
 
 " Command light hight
