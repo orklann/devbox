@@ -185,11 +185,20 @@ hi statusline ctermbg=61 ctermfg=White
 hi User1 ctermbg=61 ctermfg=Black
 hi User2 ctermbg=61 ctermfg=White
 
+fun! GetPaddingSpaces(s)
+  let padding = (winwidth('%') - len(a:s)) / 2
+  return repeat('\ ', padding)
+endfun
+
 fun! GetModifiedStatus()
   let sign = &modified ? '*' : ''
+  let lineNumber= repeat('1', len(printf('%i', getline('.'))))
   let fullPath = fnameescape(pathshorten(expand('%:p:h')))
   let filename = fnameescape(expand('%:t'))
-  let s = 'set statusline=%2*'.sign.'\ \ \ \ \ \ \ \ \ \ \ \%1*'.fullPath.'/%2*'.filename.'%1*:%l'
+  let path = fullPath.'/'.filename.':'.lineNumber
+  let realpath = &modified ? '*'.path : path
+  let spaces = GetPaddingSpaces(realpath)
+  let s = 'set statusline=%2*'.sign.spaces.'%1*'.fullPath.'/%2*'.filename.'%1*:%l'
   exec s
 endfun
 
