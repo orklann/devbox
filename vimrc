@@ -91,10 +91,9 @@ nnoremap <silent> <C-j> <C-f>
 nnoremap <silent> <C-k> <C-b>
 
 " Easy way for ^, $
-nnoremap <silent> 9 ^
-nnoremap <silent> 4 $
-nnoremap <silent> r ^
-nnoremap <silent> t $
+nnoremap <silent> e ^
+nnoremap <silent> r $
+nnoremap <silent> t <Del>
 
 " Change cursor while switching between insert mode and normal mode for iTerm2
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
