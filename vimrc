@@ -94,6 +94,7 @@ nnoremap <silent> <C-k> <C-b>
 nnoremap <silent> e ^
 nnoremap <silent> r $
 nnoremap <silent> t <Del>
+nnoremap <silent> q 0
 
 " Change cursor while switching between insert mode and normal mode for iTerm2
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
