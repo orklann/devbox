@@ -185,16 +185,19 @@ hi statusline ctermbg=61 ctermfg=White
 hi User1 ctermbg=61 ctermfg=Black
 hi User2 ctermbg=61 ctermfg=White
 
-
 fun! GetModifiedStatus()
   let sign = &modified ? '*' : ''
   let fullPath = pathshorten(expand('%:p:h'))
   let filename = expand('%:t')
-  let s = 'set statusline=%2*'.sign.'\ \ \ \ \ \%1*'.fullPath.'/%2*'.filename.':%1*:%l'
+  let s = 'set statusline=%2*'.sign.'\ \ \ \ \ \ \ \ \ \ \ \%1*'.fullPath.'/%2*'.filename.'%1*:%l'
   exec s
 endfun
 
-call GetModifiedStatus()
-
 autocmd CursorMovedI * call GetModifiedStatus()
 autocmd BufWritePost * call GetModifiedStatus()
+autocmd BufRead,BufNewFile * call GetModifiedStatus()
+autocmd! BufRead,BufNewFile * call GetModifiedStatus()
+autocmd VimEnter * call GetModifiedStatus()
+
+"Command light hight
+set cmdheight=1
