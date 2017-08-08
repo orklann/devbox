@@ -187,8 +187,8 @@ hi User2 ctermbg=61 ctermfg=White
 
 fun! GetModifiedStatus()
   let sign = &modified ? '*' : ''
-  let fullPath = pathshorten(expand('%:p:h'))
-  let filename = expand('%:t')
+  let fullPath = fnameescape(pathshorten(expand('%:p:h')))
+  let filename = fnameescape(expand('%:t'))
   let s = 'set statusline=%2*'.sign.'\ \ \ \ \ \ \ \ \ \ \ \%1*'.fullPath.'/%2*'.filename.'%1*:%l'
   exec s
 endfun
