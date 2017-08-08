@@ -220,3 +220,6 @@ autocmd VimEnter * call GetStatus()
 
 " Command light hight
 set cmdheight=1
+
+" New line
+nmap <CR> o<Esc>i<Tab>
