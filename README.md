@@ -43,3 +43,4 @@ omf install foreign-env
 
 ![Fish Default Theme](https://raw.githubusercontent.com/orklann/devbox/master/Fish%20default%20theme.png)
 ![DNA](https://raw.githubusercontent.com/orklann/devbox/master/dna.png)
+![Vim Status Line](https://raw.githubusercontent.com/orklann/devbox/master/Vim%20Satusline.png)
