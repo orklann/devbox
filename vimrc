@@ -195,7 +195,7 @@ fun! GetPaddingSpaces(s)
   return repeat('\ ', padding)
 endfun
 
-fun! GetModifiedStatus()
+fun! GetStatus()
   let sign = &modified ? '*' : ''
   let lineNumber= repeat('1', len(printf('%i', getline('.'))))
   let fullPath = fnameescape(pathshorten(expand('%:p:h')))
@@ -206,11 +206,11 @@ fun! GetModifiedStatus()
   exec s
 endfun
 
-autocmd CursorMovedI * call GetModifiedStatus()
-autocmd BufWritePost * call GetModifiedStatus()
-autocmd BufRead,BufNewFile * call GetModifiedStatus()
-autocmd! BufRead,BufNewFile * call GetModifiedStatus()
-autocmd VimEnter * call GetModifiedStatus()
+autocmd CursorMovedI * call GetStatus()
+autocmd BufWritePost * call GetStatus()
+autocmd BufRead,BufNewFile * call GetStatus()
+autocmd! BufRead,BufNewFile * call GetStatus()
+autocmd VimEnter * call GetStatus()
 
 "Command light hight
 set cmdheight=1
