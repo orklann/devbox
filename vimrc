@@ -92,7 +92,9 @@ nnoremap <silent> <C-k> <C-b>
 
 " Easy way for ^, $
 nnoremap <silent> e ^
+vnoremap <silent> e ^
 nnoremap <silent> r $
+vnoremap <silent> r $
 nnoremap <silent> t <Del>
 nnoremap <silent> q 0
 
@@ -207,7 +209,7 @@ fun! GetStatus()
   let spaces = GetPaddingSpaces(path)
   " Show file encoding on status line
   "let s = 'set statusline=%2*'.sign.spaces.'%1*'.fullPath.'/%2*'.filename.'%1*:%l'."%=%2*%{''.(&fenc!=''?&fenc:&enc).''}"
-  let s = 'set statusline=%2*'.sign.spaces.'%1*'.fullPath.'/%2*'.filename.'%1*:%l'
+  let s = 'set statusline=%2*'.sign.spaces.'%1*'.fullPath.'/%2*'.filename.'%1*:%l:%2*%c'
   exec s
 endfun
 
@@ -223,3 +225,6 @@ set cmdheight=1
 
 " New line
 nmap <CR> o<Esc>i
+
+" Fix 13_AutoPairsReturn
+let g:AutoPairsMapCR=0
