@@ -203,9 +203,10 @@ endfun
 fun! GetStatus()
   let sign = &modified ? '*' : ''
   let lineNumber= repeat('1', len(printf('%i', getline('.'))))
+  let columnNumber = repeat('1', len(printf('%i', virtcol('.'))))
   let fullPath = fnameescape(pathshorten(expand('%:p:h')))
   let filename = fnameescape(expand('%:t'))
-  let path = fullPath.'/'.filename.':'.lineNumber
+  let path = fullPath.'/'.filename.':'.lineNumber.':'.columnNumber
   let spaces = GetPaddingSpaces(path)
   " Show file encoding on status line
   "let s = 'set statusline=%2*'.sign.spaces.'%1*'.fullPath.'/%2*'.filename.'%1*:%l'."%=%2*%{''.(&fenc!=''?&fenc:&enc).''}"
