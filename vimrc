@@ -103,7 +103,7 @@ noremap <silent> <nowait> G GG
 
 " Change cursor while switching between insert mode and normal mode for iTerm2
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+" let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " Fix: Delay while switching betweeen insert mode and normal mode
