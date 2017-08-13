@@ -10,6 +10,9 @@ set fish_path $HOME/.oh-my-fish
 # Source ~/.profile
 fenv source ~/.profile
 
+# Don't show startup message
+set --universal fish_greeting
+
 # Aliases
 alias :q=exit
 alias :wq=exit
@@ -22,9 +25,7 @@ alias gd="git diff"
 alias gp="git push"
 
 alias p7="export pn=7; and ssh -4 -C -D 8088 57e37d9d0c1e6636490001c5@52.23.162.8"
-alias http_proxy="export http_proxy='http://127.0.0.1:1087'"
-alias https_proxy="export https_proxy='https://127.0.0.1:1087'"
-alias all_proxy="export ALL_PROXY=127.0.0.1:1087"
+alias all_proxy="export ALL_PROXY=127.0.0.1:1086"
 alias ls="ls -G"
 alias xx="cd ~/XX-Net; and sh start; and cd -"
 alias todo="vim /Users/aaron/Desktop/Todo.md"
