@@ -39,6 +39,8 @@ omf install foreign-env
 
 ###### *`fish theme`*: run `omf theme default`
 
+######*`To correct default theme git prompt`*: see https://gist.github.com/orklann/57e4dbdcd52b291a2b58b6a302bbc9fe
+
 ## Screenshot
 
 ![Fish Default Theme](https://raw.githubusercontent.com/orklann/devbox/master/Fish%20default%20theme.png)
