@@ -229,3 +229,6 @@ nmap <CR> o<Esc>i
 
 " Fix 13_AutoPairsReturn
 let g:AutoPairsMapCR=0
+
+" Set default shell for Vim
+set shell=/bin/sh
