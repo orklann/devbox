@@ -52,3 +52,18 @@ alias lf="echo -e \"\033]50;SetProfile=Larger Takeshi\a\" 2> /dev/null"
 # Smaller font
 alias sf="echo -e \"\033]50;SetProfile=Takeshi\a\" 2> /dev/null"
 export LSCOLORS="exfxcxdxbxegedabagacad"
+
+alias me="vim ~/Desktop/me.txt"
+
+# cnpm
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+--cache=$HOME/.npm/.cache/cnpm \
+--disturl=https://npm.taobao.org/dist \
+--userconfig=$HOME/.cnpmrc"
+
+# Jade Empire
+alias jade="cd /Users/aaron/.wine/drive_c/GOG\ Games/Jade\ Empire"
+
+# greadlink -f to print full path of file
+# brew install coreutils
+alias rl="greadlink -f"
