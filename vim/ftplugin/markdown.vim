@@ -13,7 +13,7 @@ function! CompleteDashes()
 endfunction
 
 function! AutoComplete()
-  let current_char = getline('.')[col('.')-1] 
+  let current_char = getline('.')[col('.')-1]
   if current_char == '-'
     call CompleteDashes()
   endif
@@ -21,4 +21,4 @@ function! AutoComplete()
 endfunction
 
 " only map tab key for .md buffer
-inoremap <buffer> <Tab> <ESC>:call AutoComplete()<CR>
+" inoremap <buffer> <Tab> <ESC>:call AutoComplete()<CR>
