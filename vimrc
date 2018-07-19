@@ -232,3 +232,4 @@ let g:AutoPairsMapCR=0
 
 " Set default shell for Vim
 set shell=/bin/sh
+cd %:p:h
