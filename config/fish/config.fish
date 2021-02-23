@@ -19,10 +19,10 @@ alias :wq=exit
 alias :e=vim
 alias gs="git status"
 alias gc="git commit -m"
-alias gl="git lg"
 alias ga="git add"
 alias gd="git diff"
 alias gp="git push"
+alias gl='git log --pretty=format:"%s"'
 
 alias p7="export pn=7; and ssh -4 -C -D 8088 57e37d9d0c1e6636490001c5@52.23.162.8"
 alias ls="ls -G"
