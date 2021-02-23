@@ -366,6 +366,8 @@
 	<string>1FA86F21-BA79-4D35-8967-624A3AA58E07</string>
 	<key>DimBackgroundWindows</key>
 	<false/>
+	<key>DisableFullscreenTransparency</key>
+	<false/>
 	<key>DisableWindowSizeSnap</key>
 	<true/>
 	<key>EnableRendezvous</key>
@@ -477,6 +479,8 @@
 	<false/>
 	<key>HideActivityIndicator</key>
 	<false/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTab</key>
@@ -2109,8 +2113,12 @@
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>StatusBarPosition</key>
+	<integer>0</integer>
 	<key>TabStyle</key>
 	<integer>2</integer>
+	<key>TabStyleWithAutomaticOption</key>
+	<integer>6</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TerminalMargin</key>
