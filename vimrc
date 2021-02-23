@@ -235,4 +235,4 @@ set shell=/bin/sh
 cd %:p:h
 
 " Clear highlighting on escape in normal mode
-nnoremap <CR> :noh<CR><CR>
+nnoremap <silent> <CR> :noh<CR><CR>
