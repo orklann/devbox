@@ -27,7 +27,7 @@ alias gl='git log --pretty=format:"%s"'
 alias p7="export pn=7; and ssh -4 -C -D 8088 57e37d9d0c1e6636490001c5@52.23.162.8"
 alias ls="ls -G"
 alias xx="cd ~/XX-Net; and sh start; and cd -"
-alias todo="vim /Users/aaron/Desktop/Todo.md"
+alias todo="vim /Users/aaron/Library/Mobile\ Documents/com~apple~CloudDocs/Todo/Todo.md"
 alias pfon="sudo pfctl -f /Users/aaron/go/tapestry/ipfw.rules"
 alias pfoff="sudo pfctl -f /etc/pf.conf"
 alias pfst="sudo pfctl -s nat"
