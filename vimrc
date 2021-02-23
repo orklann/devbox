@@ -3,6 +3,8 @@ au! BufRead,BufNewFile *.scss       setfiletype css
 " Use vim settings, instead of vi
 set nocompatible
 set loadplugins
+" Load snippets.vim
+runtime snippets.vim
 " Reindent operations (<< and >>)
 """ BIKESHEDDING set shiftwidth=4
 " 4 space tab
