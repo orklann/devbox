@@ -233,3 +233,7 @@ let g:AutoPairsMapCR=0
 " Set default shell for Vim
 set shell=/bin/sh
 cd %:p:h
+
+" Clear highlighting on escape in normal mode
+nnoremap <esc> :noh<return><esc>
+nnoremap <esc>^[ <esc>^[
