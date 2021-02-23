@@ -25,7 +25,6 @@ alias gd="git diff"
 alias gp="git push"
 
 alias p7="export pn=7; and ssh -4 -C -D 8088 57e37d9d0c1e6636490001c5@52.23.162.8"
-alias all_proxy="export ALL_PROXY=127.0.0.1:1086"
 alias ls="ls -G"
 alias xx="cd ~/XX-Net; and sh start; and cd -"
 alias todo="vim /Users/aaron/Desktop/Todo.md"
@@ -67,3 +66,16 @@ alias jade="cd /Users/aaron/.wine/drive_c/GOG\ Games/Jade\ Empire"
 # greadlink -f to print full path of file
 # brew install coreutils
 alias rl="greadlink -f"
+
+export ALL_PROXY=socks5://127.0.0.1:4781
+
+alias set_proxy="export ALL_PROXY=socks5://127.0.0.1:4781"
+alias vps="ssh root@45.32.225.253 -p 22"
+alias blender2901="/Applications/Blender_2.90.1.app/Contents/MacOS/Blender"
+alias blender280="/Applications/Blender_2.80.app/Contents/MacOS/Blender"
+alias blender281="/Applications/Blender_2.81.app/Contents/MacOS/Blender"
+alias blender282="/Applications/Blender_2.82.app/Contents/MacOS/Blender"
+alias blender283="/Applications/Blender_2.83.app/Contents/MacOS/Blender"
+alias blender290="/Applications/Blender_2.90.app/Contents/MacOS/Blender"
+alias blender291="/Applications/Blender_2.91.app/Contents/MacOS/Blender"
+alias addon="cd /Users/aaron/Library/Application\ Support/Blender"
