@@ -236,8 +236,13 @@ let g:AutoPairsMapCR=0
 set shell=/bin/sh
 cd %:p:h
 
+" Use <Down> key to complete for supertab
+let g:SuperTabMappingForward = "<Down>"
+
 " Install Vim plugins by vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'Jorengarenar/miniSnip'
+Plug 'ervandew/supertab'
 " Initialize plugin system
 call plug#end()
+
