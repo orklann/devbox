@@ -235,3 +235,9 @@ let g:AutoPairsMapCR=0
 " Set default shell for Vim
 set shell=/bin/sh
 cd %:p:h
+
+" Install Vim plugins by vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'Jorengarenar/miniSnip'
+" Initialize plugin system
+call plug#end()
