@@ -1,5 +1,5 @@
 " Insert or delete brackets, parens, quotes in pairs.
-" Maintainer:	JiangMiao <jiangfriend@gmail.com>
+" Maintainer: JiangMiao <jiangfriend@gmail.com>
 " Contributor: camthompson
 " Last Change:  2013-07-13
 " Version: 1.3.2
@@ -410,7 +410,8 @@ function! AutoPairsSpace()
   if has_key(g:AutoPairsParens, prev_char) && g:AutoPairsParens[prev_char] == cur_char
     let cmd = "\<SPACE>".s:Left
   endif
-  return "\<SPACE>".cmd
+  "return "\<SPACE>".cmd
+  return " "
 endfunction
 
 function! AutoPairsBackInsert()
