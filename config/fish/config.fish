@@ -80,3 +80,5 @@ alias blender290="/Applications/Blender_2.90.app/Contents/MacOS/Blender"
 alias blender291="/Applications/Blender_2.91.app/Contents/MacOS/Blender"
 alias blender292="/Applications/Blender_2.92.app/Contents/MacOS/Blender"
 alias addon="cd $HOME/Library/Application\ Support/Blender"
+
+alias cloc="git ls-files | xargs cat | wc -l"
