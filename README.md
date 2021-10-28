@@ -41,6 +41,10 @@ omf install foreign-env
 
 ###### *`To correct default theme git prompt`*: see https://gist.github.com/orklann/57e4dbdcd52b291a2b58b6a302bbc9fe
 
+### Objc Autocomplete for Vim
+###### Use this script to generate .clang_complete file for current folder
+https://gist.github.com/orklann/2f5c2989cdf0a84a1f6ff96f9c442c13
+
 ## Screenshot
 
 ![Fish Default Theme](https://raw.githubusercontent.com/orklann/devbox/master/Fish%20default%20theme.png)
