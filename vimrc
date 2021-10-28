@@ -142,7 +142,7 @@ cabbrev t tabedit
 cabbrev l silent exec "!resize -s 45 120"
 
 " Smaller window
-cabbrev s silent exec "!resize -s 45 80"
+" cabbrev s silent exec "!resize -s 45 80"
 
 fun! LargerFont()
   silent exec '!echo -e "\033]50;SetProfile=Larger Takeshi\a"'
