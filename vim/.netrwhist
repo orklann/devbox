@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/rkt/projects/pdf-ops/PDF Ops/UI'
 let g:netrw_dirhist_8='/Users/rkt/projects/pdf-ops/PDF Ops'
 let g:netrw_dirhist_7='/Users/rkt/projects/pdf-ops'
 let g:netrw_dirhist_6='/Users/rkt/projects/pdf-ops/PDF Ops/UI'
