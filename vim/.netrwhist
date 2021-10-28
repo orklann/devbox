@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/Users/rkt/projects/pdf-ops/PDF Ops'
+let g:netrw_dirhist_7='/Users/rkt/projects/pdf-ops'
+let g:netrw_dirhist_6='/Users/rkt/projects/pdf-ops/PDF Ops/UI'
+let g:netrw_dirhist_5='/Users/rkt/projects/pdf-ops/PDF Ops'
+let g:netrw_dirhist_4='/Users/rkt/projects/pdf-ops/PDF Ops/UI'
+let g:netrw_dirhist_3='/Users/rkt/projects/pdf-ops/PDF Ops'
+let g:netrw_dirhist_2='/Users/rkt/projects/pdf-ops'
 let g:netrw_dirhist_1='/Users/rkt/projects/orklann.github.io'
