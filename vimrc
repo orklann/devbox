@@ -100,7 +100,6 @@ vnoremap <silent> e ^
 nnoremap <silent> r $
 vnoremap <silent> r $
 nnoremap <silent> t <Del>
-nnoremap <silent> q 0
 
 " gg, GG shortcuts
 noremap <silent> <nowait> G GG
@@ -248,3 +247,15 @@ Plug 'ervandew/supertab'
 " Initialize plugin system
 call plug#end()
 
+" Clang complete for objc
+" This function net used yet
+function ClangLibPath()
+    let clangPath = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
+    return clangPath
+endfunction
+let g:clang_user_options='|| exit 0'
+let g:clang_complete_auto = 1
+let g:clang_complete_copen = 0
+
+" Hide preview window
+set completeopt-=preview
