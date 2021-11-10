@@ -259,3 +259,9 @@ let g:clang_complete_copen = 0
 
 " Hide preview window
 set completeopt-=preview
+
+" Disable arrow keys navigation to force me not to use them
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
