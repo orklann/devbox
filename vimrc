@@ -99,7 +99,9 @@ nnoremap <silent> e ^
 vnoremap <silent> e ^
 nnoremap <silent> r $
 vnoremap <silent> r $
-nnoremap <silent> t <Del>
+nnoremap <silent> t 0
+vnoremap <silent> t 0
+nnoremap <silent> s <Del>
 
 " gg, GG shortcuts
 noremap <silent> <nowait> G GG
@@ -170,7 +172,7 @@ set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
 " set relative line numbers
-set nu
+set nonu
 
 " Disable arrow keys for insert mode
 inoremap <Left> <Nop>
