@@ -1565,7 +1565,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>120</integer>
+			<integer>80</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Boost</key>
@@ -1978,11 +1978,11 @@
 			<key>Name</key>
 			<string>Larger Takeshi</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>Monaco 8</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>RobotoMono-Medium 40</string>
+			<string>RobotoMono-Medium 27</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
