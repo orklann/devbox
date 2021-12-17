@@ -101,7 +101,7 @@ nnoremap <silent> r $
 vnoremap <silent> r $
 nnoremap <silent> t 0
 vnoremap <silent> t 0
-nnoremap <silent> s <Del>
+nnoremap <silent> s e
 
 " gg, GG shortcuts
 noremap <silent> <nowait> G GG
