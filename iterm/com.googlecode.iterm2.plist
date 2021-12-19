@@ -788,11 +788,11 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.42755770683288574</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.97384548187255859</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -2152,6 +2152,8 @@
 	<integer>0</integer>
 	<key>TerminalVMargin</key>
 	<integer>0</integer>
+	<key>TimeBetweenBlinks</key>
+	<real>0.5</real>
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Recent Directories</string>
