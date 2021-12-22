@@ -285,4 +285,4 @@ let g:neovide_remember_window_size = v:true
 
 " Custom tab bar colors
 hi TabLineSel guifg=black guibg=#5F5FAF
-hi TabLine guibg=#5B5B5B
+hi TabLine guibg=#A08367
