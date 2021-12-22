@@ -72,8 +72,9 @@ colorscheme sidonia
 "colorscheme desert
 
 " make the mouse works under screen :
-set ttymouse=xterm2
-set mouse=ar
+" Comment out these 2 lines for fix neovide error
+"set ttymouse=xterm2
+"set mouse=ar
 
 " Change buffer
 map <C-N> :tabnext<CR>
@@ -191,13 +192,6 @@ autocmd BufWritePre * %s/\s\+$//e
 " Show status line always
 set laststatus=2
 
-" Set status line colors
-hi statusline ctermbg=61 ctermfg=White
-
-" Color groups for status lines
-hi User1 ctermbg=61 ctermfg=Black
-hi User2 ctermbg=61 ctermfg=White
-
 fun! GetPaddingSpaces(s)
   let w = winwidth('%')
   let width = &modified ? w - 1: w
@@ -246,6 +240,7 @@ let g:SuperTabMappingForward = "<Down>"
 call plug#begin('~/.vim/plugged')
 Plug 'Jorengarenar/miniSnip'
 Plug 'ervandew/supertab'
+Plug 'projekt0n/github-nvim-theme'
 " Initialize plugin system
 call plug#end()
 
@@ -267,3 +262,18 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
+set guifont=Roboto\ Mono\ Medium:h13:cANSI
+colorscheme github_dimmed
+
+" Set status line colors
+hi statusline ctermbg=61 ctermfg=White
+" Set status line colors for Neovide
+hi statusline guibg=#5F5FAF guifg=White
+
+" Color groups for status lines"
+hi User1 ctermbg=61 ctermfg=Black
+hi User2 ctermbg=61 ctermfg=White
+
+" Color groups for status lines for Neovide
+hi User1 guibg=#5F5FAF guifg=Black
+hi User2 guibg=#5F5FAF guifg=White
