@@ -262,7 +262,7 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
-set guifont=Roboto\ Mono\ Medium:h13:cANSI
+set guifont=Roboto\ Mono\ Medium:h14:cANSI
 if has('nvim')
   colorscheme github_dimmed
 endif
@@ -279,3 +279,6 @@ hi User2 ctermbg=61 ctermfg=White
 " Color groups for status lines for Neovide
 hi User1 guibg=#5F5FAF guifg=#303645
 hi User2 guibg=#5F5FAF guifg=White
+
+" Remember previous window size
+let g:neovide_remember_window_size = v:true
