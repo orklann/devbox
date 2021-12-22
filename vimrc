@@ -262,7 +262,7 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
-set guifont=Roboto\ Mono\ Medium:h14:cANSI
+set guifont=Roboto\ Mono\ Medium:h13:cANSI
 if has('nvim')
   colorscheme github_dimmed
 endif
