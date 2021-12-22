@@ -265,8 +265,9 @@ nnoremap <right> <nop>
 set guifont=Roboto\ Mono\ Medium:h13:w5:cANSI
 if has('nvim')
   colorscheme github_dimmed
-  " override normal text color to white
+  " override normal text color to white, aim for Todo.md
   hi markdownCodeBlock guifg=white
+  hi Normal guifg=white
 endif
 
 " Set status line colors
