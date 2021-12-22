@@ -263,7 +263,9 @@ nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
 set guifont=Roboto\ Mono\ Medium:h13:cANSI
-colorscheme github_dimmed
+if has('nvim')
+  colorscheme github_dimmed
+endif
 
 " Set status line colors
 hi statusline ctermbg=61 ctermfg=White
@@ -275,5 +277,5 @@ hi User1 ctermbg=61 ctermfg=Black
 hi User2 ctermbg=61 ctermfg=White
 
 " Color groups for status lines for Neovide
-hi User1 guibg=#5F5FAF guifg=Black
+hi User1 guibg=#5F5FAF guifg=#303645
 hi User2 guibg=#5F5FAF guifg=White
