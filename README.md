@@ -52,6 +52,7 @@ omf install foreign-env
 https://gist.github.com/orklann/2f5c2989cdf0a84a1f6ff96f9c442c13
 
 ### Neovide & Nerd Fonts
+###### 0. Install neovim & Neovide (Just google)
 ###### 1. Install Nerd font in fonts folder
 ###### 2. Step to set font for Neovide
 
