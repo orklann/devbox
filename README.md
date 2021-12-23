@@ -52,11 +52,11 @@ omf install foreign-env
 https://gist.github.com/orklann/2f5c2989cdf0a84a1f6ff96f9c442c13
 
 ### Neovide & Nerd Fonts
-###### Install Nerd font in fonts folder
-###### Step to set font for Neovide
+###### 1. Install Nerd font in fonts folder
+###### 2. Step to set font for Neovide
 
 ```console
-fc-list | grep Nerd                                                13:02:30
+fc-list | grep Nerd
 /Users/rkt/Library/Fonts/RobotoMonoNerdMediumPatch-Regular.otf: Roboto Mono Nerd Medium Patch:style=Regular
 ```
 
