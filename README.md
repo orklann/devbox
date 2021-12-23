@@ -51,6 +51,19 @@ omf install foreign-env
 ###### Use this script to generate .clang_complete file for current folder
 https://gist.github.com/orklann/2f5c2989cdf0a84a1f6ff96f9c442c13
 
+### Neovide & Nerd Fonts
+###### Install Nerd font in fonts folder
+###### Step to set font for Neovide
+
+```console
+fc-list | grep Nerd                                                13:02:30
+/Users/rkt/Library/Fonts/RobotoMonoNerdMediumPatch-Regular.otf: Roboto Mono Nerd Medium Patch:style=Regular
+```
+
+```vim
+set guifont=Roboto\ Mono\ Nerd\ Medium\ Patch:h13:cANSI
+```
+
 ## Screenshot
 
 ![Fish Default Theme](https://raw.githubusercontent.com/orklann/devbox/master/Fish%20default%20theme.png)
