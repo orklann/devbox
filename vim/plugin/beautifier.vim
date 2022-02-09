@@ -1,6 +1,5 @@
 "% Preliminary validation of global variables
 "  and version of the editor.
-
 if v:version < 700
   finish
 endif
