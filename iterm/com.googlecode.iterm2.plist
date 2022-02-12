@@ -479,6 +479,8 @@
 			<string></string>
 		</dict>
 	</dict>
+	<key>HTMLTabTitles</key>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideActivityIndicator</key>
@@ -1253,13 +1255,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.38039215686274508</real>
+				<real>0.28627450980392155</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.41960784313725491</real>
+				<real>0.84313725490196079</real>
 				<key>Red Component</key>
-				<real>0.98431372549019602</real>
+				<real>0.70980392156862748</real>
 			</dict>
 			<key>Tags</key>
 			<array/>
