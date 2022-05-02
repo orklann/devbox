@@ -9,6 +9,7 @@ autopairs-options	AudoPairs.txt	/*autopairs-options*
 autopairs-shortcuts	AudoPairs.txt	/*autopairs-shortcuts*
 autopairs-troubleshooting	AudoPairs.txt	/*autopairs-troubleshooting*
 b:AutoPairs	AudoPairs.txt	/*b:AutoPairs*
+cS	surround.txt	/*cS*
 clang_close-preview	clang_complete.txt	/*clang_close-preview*
 clang_complete	clang_complete.txt	/*clang_complete*
 clang_complete-author	clang_complete.txt	/*clang_complete-author*
@@ -41,6 +42,8 @@ clang_complete-todo	clang_complete.txt	/*clang_complete-todo*
 clang_complete-use_library	clang_complete.txt	/*clang_complete-use_library*
 clang_complete-user_options	clang_complete.txt	/*clang_complete-user_options*
 clang_complete.txt	clang_complete.txt	/*clang_complete.txt*
+cs	surround.txt	/*cs*
+ds	surround.txt	/*ds*
 editorconfig-advanced	editorconfig.txt	/*editorconfig-advanced*
 editorconfig-commands	editorconfig.txt	/*editorconfig-commands*
 editorconfig-contents	editorconfig.txt	/*editorconfig-contents*
@@ -100,6 +103,8 @@ g:clang_sort_algo	clang_complete.txt	/*g:clang_sort_algo*
 g:clang_trailing_placeholder	clang_complete.txt	/*g:clang_trailing_placeholder*
 g:clang_use_library	clang_complete.txt	/*g:clang_use_library*
 g:clang_user_options	clang_complete.txt	/*g:clang_user_options*
+i_CTRL-G_S	surround.txt	/*i_CTRL-G_S*
+i_CTRL-G_s	surround.txt	/*i_CTRL-G_s*
 supertab	supertab.txt	/*supertab*
 supertab-closepreviewonpopupclose	supertab.txt	/*supertab-closepreviewonpopupclose*
 supertab-completionchaining	supertab.txt	/*supertab-completionchaining*
@@ -120,6 +125,15 @@ supertab-options	supertab.txt	/*supertab-options*
 supertab-preventcomplete	supertab.txt	/*supertab-preventcomplete*
 supertab-usage	supertab.txt	/*supertab-usage*
 supertab.txt	supertab.txt	/*supertab.txt*
+surround	surround.txt	/*surround*
+surround-customizing	surround.txt	/*surround-customizing*
+surround-issues	surround.txt	/*surround-issues*
+surround-mappings	surround.txt	/*surround-mappings*
+surround-replacements	surround.txt	/*surround-replacements*
+surround-targets	surround.txt	/*surround-targets*
+surround.txt	surround.txt	/*surround.txt*
+vS	surround.txt	/*vS*
+vgS	surround.txt	/*vgS*
 xcode-:Xbuild	xcode.txt	/*xcode-:Xbuild*
 xcode-:Xclean	xcode.txt	/*xcode-:Xclean*
 xcode-:Xopen	xcode.txt	/*xcode-:Xopen*
@@ -143,3 +157,7 @@ xcode_runner_command	xcode.txt	/*xcode_runner_command*
 xcode_workspace_file	xcode.txt	/*xcode_workspace_file*
 xcode_xcpretty_flags	xcode.txt	/*xcode_xcpretty_flags*
 xcode_xcpretty_testing_flags	xcode.txt	/*xcode_xcpretty_testing_flags*
+yS	surround.txt	/*yS*
+ySS	surround.txt	/*ySS*
+ys	surround.txt	/*ys*
+yss	surround.txt	/*yss*
