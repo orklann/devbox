@@ -67,7 +67,7 @@ set autoindent
 set smartindent
 syntax on
 
-colorscheme sidonia
+"colorscheme sidonia
 "nice scheme as well
 "colorscheme desert
 
@@ -292,3 +292,6 @@ hi TabLine guibg=#A08367
 
 " Enable cscope
 set cscopetag
+
+" Wrap text to textwidth: set textwidth=80, and use this command
+nmap <C-L> gqG
