@@ -168,6 +168,9 @@ let g:AutoPairsFlyMode = 0
 " yank also copy to system  pasteboad
 set clipboard=unnamed
 
+" yank also copy to system clipboard for Ubuntu
+set clipboard=unnamedplus
+
 " encoding
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
