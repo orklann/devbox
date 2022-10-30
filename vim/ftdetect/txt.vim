@@ -1,1 +1,1 @@
-autocmd BufRead,BufNewFile *.txt set filetype=css
+autocmd BufRead,BufNewFile *.txt set filetype=txt
