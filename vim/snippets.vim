@@ -1,1 +1,10 @@
 :iabbrev chk ✔
+:iabbrev unc1 ❶
+:iabbrev unc2 ❷
+:iabbrev unc3 ❸
+:iabbrev unc4 ❹
+:iabbrev unc5 ❺
+:iabbrev unc6 ❻
+:iabbrev unc7 ❼
+:iabbrev unc8 ❽
+:iabbrev unc9 ❾
