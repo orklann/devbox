@@ -292,8 +292,9 @@ let g:neovide_remember_window_size = v:true
 
 " Custom tab bar colors
 "
-hi TabLineSel guifg=black guibg=#5F5FAF
+hi TabLineSel term=none cterm=none ctermbg=1 guifg=black guibg=#5F5FAF
 hi TabLine guibg=#A08367
+hi TabLineFill term=none cterm=none ctermbg=none
 
 " Enable cscope
 set cscopetag
@@ -303,3 +304,4 @@ nmap <C-L> gqG
 
 nnoremap y "+y
 vnoremap y "+y
+
