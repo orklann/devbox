@@ -256,6 +256,7 @@ endfunction
 let g:clang_user_options='|| exit 0'
 let g:clang_complete_auto = 1
 let g:clang_complete_copen = 0
+let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib"
 
 " Hide preview window
 set completeopt-=preview
@@ -290,6 +291,7 @@ hi User2 guibg=#5F5FAF guifg=White
 let g:neovide_remember_window_size = v:true
 
 " Custom tab bar colors
+"
 hi TabLineSel guifg=black guibg=#5F5FAF
 hi TabLine guibg=#A08367
 
@@ -298,3 +300,6 @@ set cscopetag
 
 " Wrap text to textwidth: set textwidth=80, and use this command
 nmap <C-L> gqG
+
+nnoremap y "+y
+vnoremap y "+y
