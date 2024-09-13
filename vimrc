@@ -296,6 +296,9 @@ hi TabLineSel term=none cterm=none ctermbg=1 guifg=black guibg=#5F5FAF
 hi TabLine term=none cterm=none guibg=#A08367
 hi TabLineFill term=none cterm=none ctermbg=none
 
+" Cursor Line
+hi CursorLine term=none cterm=none
+
 " Enable cscope
 set cscopetag
 
