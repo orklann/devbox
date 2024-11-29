@@ -6,7 +6,6 @@ set loadplugins
 " no swap files
 set noswapfile
 " Load snippets.vim
-runtime snippets.vim
 " Reindent operations (<< and >>)
 """ BIKESHEDDING set shiftwidth=4
 " 4 space tab
@@ -67,9 +66,7 @@ set autoindent
 set smartindent
 syntax on
 
-"colorscheme sidonia
-"nice scheme as well
-"colorscheme desert
+colorscheme sidonia
 
 " make the mouse works under screen :
 " Comment out these 2 lines for fix neovide error
@@ -89,7 +86,6 @@ map <C-P> :tabprevious<CR>
 map <C-C> :nohlsearch<CR>
 
 autocmd FileType Makefile noexpandtab
-au filetype tmpl set omnifunc=htmlcomplete#CompleteTags
 
 " Change the current tab with ^j and ^k (normal mode only)
 nnoremap <silent> <C-j> <C-f>
@@ -137,34 +133,6 @@ nnoremap vv V
 "
 cabbrev t tabedit
 
-" Make !resize work in iTerm2
-" Preferences -> Profiles -> {your profile} -> Terminal,
-" Uncheck this "Disable session-initiated window resizing"
-" Large window
-cabbrev l silent exec "!resize -s 45 120"
-
-" Smaller window
-" cabbrev s silent exec "!resize -s 45 80"
-
-fun! LargerFont()
-  silent exec '!echo -e "\033]50;SetProfile=Larger Takeshi\a"'
-  redraw!
-endfun
-
-fun! SmallerFont()
-  silent exec '!echo -e "\033]50;SetProfile=Takeshi\a"' | redraw!
-  redraw!
-endfun
-
-" Larger font
-cabbrev lf call LargerFont()
-" Smaller font
-cabbrev sf call SmallerFont()
-
-" Fix auto jump to closing brace in auto-pairs
-let g:AutoPairsMultilineClose = 0
-let g:AutoPairsFlyMode = 0
-
 " yank also copy to system  pasteboad
 set clipboard=unnamed
 
@@ -183,10 +151,6 @@ inoremap <Left> <Nop>
 inoremap <Right> <Nop>
 inoremap <Up> <Nop>
 inoremap <Down> <Nop>
-
-" Use goimports instead of gofmt
-let g:gofmt_exe = 'goimports'
-let g:gofmt_display_errors = 1
 
 " Trim whitespace on save
 " From: http://vim.wikia.com/wiki/Remove_unwanted_spaces
@@ -229,50 +193,11 @@ set cmdheight=1
 " New line
 nmap <CR> o<Esc>i
 
-" Fix 13_AutoPairsReturn
-let g:AutoPairsMapCR=0
-
-" Set default shell for Vim
-set shell=/bin/sh
-cd %:p:h
-
-" Use <Down> key to complete for supertab
-let g:SuperTabMappingForward = "<Down>"
-
-" Install Vim plugins by vim-plug
-call plug#begin('~/.vim/plugged')
-Plug 'Jorengarenar/miniSnip'
-Plug 'ervandew/supertab'
-Plug 'projekt0n/github-nvim-theme'
-" Initialize plugin system
-call plug#end()
-
-" Clang complete for objc
-" This function net used yet
-function ClangLibPath()
-    let clangPath = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
-    return clangPath
-endfunction
-let g:clang_user_options='|| exit 0'
-let g:clang_complete_auto = 1
-let g:clang_complete_copen = 0
-let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib"
-
-" Hide preview window
-set completeopt-=preview
-
 " Disable arrow keys navigation to force me not to use them
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
-set guifont=Roboto\ Mono\ Nerd\ Medium\ Patch:h13:cANSI
-if has('nvim')
-  colorscheme github_dimmed
-  " override normal text color to white, aim for Todo.md
-  hi markdownCodeBlock guifg=white
-  hi Normal guifg=white
-endif
 
 " Set status line colors
 hi statusline ctermbg=61 ctermfg=White
@@ -287,9 +212,6 @@ hi User2 ctermbg=61 ctermfg=White
 hi User1 guibg=#5F5FAF guifg=#303645
 hi User2 guibg=#5F5FAF guifg=White
 
-" Remember previous window size
-let g:neovide_remember_window_size = v:true
-
 " Custom tab bar colors
 "
 hi TabLineSel term=none cterm=none ctermbg=1 guifg=black guibg=#5F5FAF
@@ -299,23 +221,11 @@ hi TabLineFill term=none cterm=none ctermbg=none
 " Cursor Line
 hi CursorLine term=none cterm=none
 
-" Enable cscope
-set cscopetag
-
 " Wrap text to textwidth: set textwidth=80, and use this command
 nmap <C-L> gqG
 
 nnoremap y "+y
 vnoremap y "+y
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-let g:deoplete#enable_at_startup = 1
-
 " ctrl-n to complete
-inoremap <C-n> <C-x><C-o>
+"inoremap <C-n> <C-x><C-o>
