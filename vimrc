@@ -227,5 +227,5 @@ nmap <C-L> gqG
 nnoremap y "+y
 vnoremap y "+y
 
-" ctrl-n to complete
-"inoremap <C-n> <C-x><C-o>
+" Limit autocomplete popup window height to 30 rows
+set pumheight=30
