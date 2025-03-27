@@ -1,0 +1,343 @@
+hotkeys:
+  copy-current-path: []
+  ctrl-c:
+    - Ctrl-C
+  copy:
+    - Ctrl-Shift-C
+  paste:
+    - Ctrl-Shift-V
+    - Shift-Insert
+  select-all:
+    - Ctrl-Shift-A
+  clear: []
+  zoom-in:
+    - Ctrl-=
+    - Ctrl-Shift-=
+  zoom-out:
+    - Ctrl--
+    - Ctrl-Shift--
+  reset-zoom:
+    - Ctrl-0
+  home:
+    - Home
+  end:
+    - End
+  previous-word:
+    - Ctrl-Left
+  next-word:
+    - Ctrl-Right
+  delete-previous-word:
+    - Ctrl-Backspace
+  delete-line:
+    - Ctrl-Shift-Backspace
+  delete-next-word:
+    - Ctrl-Delete
+  search:
+    - Ctrl-Shift-F
+  pane-focus-all:
+    - Ctrl-Shift-I
+  focus-all-tabs:
+    - Ctrl-Alt-Shift-I
+  scroll-to-top:
+    - Ctrl-PageUp
+  scroll-page-up:
+    - Alt-PageUp
+  scroll-up:
+    - Ctrl-Shift-Up
+  scroll-down:
+    - Ctrl-Shift-Down
+  scroll-page-down:
+    - Alt-PageDown
+  scroll-to-bottom:
+    - Ctrl-PageDown
+  restart-telnet-session: []
+  restart-ssh-session: []
+  launch-winscp: []
+  settings-tab: {}
+  settings:
+    - Ctrl-,
+  serial:
+    - Alt-K
+  restart-serial-session: []
+  new-tab:
+    - Ctrl-Shift-T
+  toggle-window:
+    - Ctrl-Space
+  new-window:
+    - Ctrl-Shift-N
+  profile: {}
+  profile-selectors: {}
+  group-selectors: {}
+  toggle-fullscreen:
+    - F11
+    - Alt-Enter
+  close-tab:
+    - Ctrl-Shift-W
+  reopen-tab:
+    - Ctrl-Shift-Z
+  toggle-last-tab: []
+  rename-tab:
+    - Ctrl-Shift-R
+  next-tab:
+    - Ctrl-Shift-Right
+    - Ctrl-Tab
+  previous-tab:
+    - Ctrl-Shift-Left
+    - Ctrl-Shift-Tab
+  move-tab-left:
+    - Ctrl-Shift-PageUp
+  move-tab-right:
+    - Ctrl-Shift-PageDown
+  rearrange-panes:
+    - Ctrl-Shift
+  duplicate-tab: []
+  restart-tab: []
+  reconnect-tab: []
+  disconnect-tab: []
+  explode-tab:
+    - Ctrl-Shift-.
+  combine-tabs:
+    - Ctrl-Shift-,
+  tab-1:
+    - Alt-1
+  tab-2:
+    - Alt-2
+  tab-3:
+    - Alt-3
+  tab-4:
+    - Alt-4
+  tab-5:
+    - Alt-5
+  tab-6:
+    - Alt-6
+  tab-7:
+    - Alt-7
+  tab-8:
+    - Alt-8
+  tab-9:
+    - Alt-9
+  tab-10:
+    - Alt-0
+  tab-11: []
+  tab-12: []
+  tab-13: []
+  tab-14: []
+  tab-15: []
+  tab-16: []
+  tab-17: []
+  tab-18: []
+  tab-19: []
+  tab-20: []
+  split-right:
+    - Ctrl-Shift-S
+  split-bottom:
+    - Ctrl-Shift-D
+  split-left: []
+  split-top: []
+  pane-nav-right:
+    - Ctrl-Alt-Right
+  pane-nav-down:
+    - Ctrl-Alt-Down
+  pane-nav-up:
+    - Ctrl-Alt-Up
+  pane-nav-left:
+    - Ctrl-Alt-Left
+  pane-nav-previous:
+    - Ctrl-Alt-[
+  pane-nav-next:
+    - Ctrl-Alt-]
+  pane-nav-1: []
+  pane-nav-2: []
+  pane-nav-3: []
+  pane-nav-4: []
+  pane-nav-5: []
+  pane-nav-6: []
+  pane-nav-7: []
+  pane-nav-8: []
+  pane-nav-9: []
+  pane-maximize:
+    - Ctrl-Alt-Enter
+  close-pane: []
+  pane-increase-vertical: []
+  pane-decrease-vertical: []
+  pane-increase-horizontal: []
+  pane-decrease-horizontal: []
+  switch-profile:
+    - Ctrl-Alt-T
+  profile-selector:
+    - Ctrl-Shift-E
+  command-selector:
+    - Ctrl-Shift-P
+terminal:
+  fontSize: 14
+  fontWeight: 400
+  fontWeightBold: 700
+  fallbackFont: null
+  linePadding: 0
+  bell: 'off'
+  bracketedPaste: true
+  background: theme
+  ligatures: false
+  cursor: block
+  cursorBlink: false
+  hideTabIndex: false
+  showTabProfileIcon: false
+  hideCloseButton: false
+  hideTabOptionsButton: false
+  rightClick: clipboard
+  pasteOnMiddleClick: false
+  copyOnSelect: true
+  copyAsHTML: true
+  scrollOnInput: true
+  altIsMeta: false
+  wordSeparator: ' ()[]{}''"'
+  colorScheme:
+    name: Tabby Default
+    foreground: '#cacaca'
+    background: '#171717'
+    cursor: '#bbbbbb'
+    colors:
+      - '#000000'
+      - '#ff615a'
+      - '#b1e969'
+      - '#ebd99c'
+      - '#5da9f6'
+      - '#e86aff'
+      - '#82fff7'
+      - '#dedacf'
+      - '#313131'
+      - '#f58c80'
+      - '#ddf88f'
+      - '#eee5b2'
+      - '#a5c7ff'
+      - '#ddaaff'
+      - '#b7fff9'
+      - '#ffffff'
+  lightColorScheme:
+    name: Tabby Default Light
+    foreground: '#4d4d4c'
+    background: '#ffffff'
+    cursor: '#4d4d4c'
+    colors:
+      - '#000000'
+      - '#c82829'
+      - '#718c00'
+      - '#eab700'
+      - '#4271ae'
+      - '#8959a8'
+      - '#3e999f'
+      - '#ffffff'
+      - '#000000'
+      - '#c82829'
+      - '#718c00'
+      - '#eab700'
+      - '#4271ae'
+      - '#8959a8'
+      - '#3e999f'
+      - '#ffffff'
+  customColorSchemes: []
+  warnOnMultilinePaste: true
+  searchRegexAlwaysEnabled: false
+  searchOptions:
+    regex: false
+    wholeWord: false
+    caseSensitive: false
+  detectProgress: true
+  scrollbackLines: 25000
+  drawBoldTextInBrightColors: true
+  sixel: true
+  minimumContrastRatio: 4
+  trimWhitespaceOnPaste: true
+  font: Consolas
+  autoOpen: true
+  environment: {}
+  setComSpec: false
+  profile: local:cmd-clink
+  showBuiltinProfiles: true
+  showRecentProfiles: 3
+  paneResizeStep: 0.1
+  focusFollowsMouse: false
+  identification: wt
+  frontend: xterm
+ssh:
+  warnOnClose: false
+  winSCPPath: null
+  agentType: auto
+  agentPath: null
+  x11Display: null
+  knownHosts:
+    - host: 192.168.3.16
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: q60viCexR2UBDT80A1eP2ESm7o1RZaynwZDweXAtkHY=
+  verifyHostKeys: true
+configSync:
+  configID: null
+  auto: false
+  parts:
+    hotkeys: true
+    appearance: true
+    vault: true
+clickableLinks:
+  modifier: null
+accessibility:
+  animations: false
+appearance:
+  dock: 'off'
+  dockScreen: current
+  dockFill: 0.5
+  dockSpace: 1
+  dockHideOnBlur: false
+  dockAlwaysOnTop: true
+  flexTabs: false
+  tabsLocation: top
+  tabsInFullscreen: false
+  cycleTabs: true
+  theme: Follow the color scheme
+  frame: full
+  css: '/* * { color: blue !important; } */'
+  opacity: 1
+  vibrancy: false
+  vibrancyType: blur
+  lastTabClosesWindow: false
+  spaciness: 1
+  colorSchemeMode: dark
+profiles:
+  - type: ssh
+    name: Ubuntu
+    icon: fas fa-desktop
+    options:
+      host: 192.168.3.16
+      user: rkt
+      algorithms: {}
+      input: {}
+      auth: password
+    weight: -1
+    id: ssh:custom:Ubuntu:56df259d-83cd-48bf-b7b7-1269c6c0ed58
+groups: []
+profileDefaults:
+  ssh:
+    disableDynamicTitle: true
+recoverTabs: true
+enableAnalytics: true
+enableWelcomeTab: false
+electronFlags:
+  - - force_discrete_gpu
+    - '0'
+enableAutomaticUpdates: true
+hideTray: false
+version: 7
+vault: null
+encrypted: false
+enableExperimentalFeatures: false
+commandBlacklist: []
+providerBlacklist: []
+profileBlacklist: []
+hacks:
+  disableVibrancyWhileDragging: false
+  enableFluentBackground: false
+  disableGPU: true
+language: null
+defaultQuickConnectProvider: ssh
+pluginBlacklist: []
+
