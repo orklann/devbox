@@ -229,3 +229,6 @@ vnoremap y "+y
 
 " Limit autocomplete popup window height to 30 rows
 set pumheight=30
+
+" Press tab to switch to next tab
+nnoremap <Tab> :tabnext<CR>
