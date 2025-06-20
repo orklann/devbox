@@ -66,7 +66,7 @@ set autoindent
 set smartindent
 syntax on
 
-colorscheme sidonia
+"colorscheme sidonia
 
 " make the mouse works under screen :
 " Comment out these 2 lines for fix neovide error
@@ -201,16 +201,12 @@ nnoremap <right> <nop>
 
 " Set status line colors
 hi statusline ctermbg=61 ctermfg=White
-" Set status line colors for Neovide
-hi statusline guibg=#5F5FAF guifg=White
 
 " Color groups for status lines"
-hi User1 ctermbg=61 ctermfg=Black
+"hi User1 ctermbg=61 ctermfg=Black
+" Use ctermfg=232 to get truly black in iTerm
+hi User1 ctermbg=61 ctermfg=232
 hi User2 ctermbg=61 ctermfg=White
-
-" Color groups for status lines for Neovide
-hi User1 guibg=#5F5FAF guifg=#303645
-hi User2 guibg=#5F5FAF guifg=White
 
 " Custom tab bar colors
 "
@@ -230,5 +226,6 @@ vnoremap y "+y
 " Limit autocomplete popup window height to 30 rows
 set pumheight=30
 
-" Press tab to switch to next tab
 nnoremap <Tab> :tabnext<CR>
+
+
