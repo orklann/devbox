@@ -21,7 +21,7 @@
 	<key>Control</key>
 	<integer>1</integer>
 	<key>CopySelection</key>
-	<false/>
+	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>sidonia</key>
