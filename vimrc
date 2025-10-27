@@ -228,4 +228,6 @@ set pumheight=30
 
 nnoremap <Tab> :tabnext<CR>
 
-
+" Patch highlight text color
+" NOTE: Tested in iTerm, it's not actually blue, but it works fine
+hi Visual ctermbg=Blue
